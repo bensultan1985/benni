@@ -64,3 +64,7 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
     if (typeof(arg) == "number" && arg == -1) return false;
     return true;
   };
+
+  $(window).resize(function() {
+    ResizeBox();
+  });
