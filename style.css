@@ -38,6 +38,10 @@ body {
     margin-left: 5%;
     margin-bottom: 8px;
     border-radius: 15px;
+    border: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-top-color: lightgray;
 }
 
 #q-send {
@@ -47,6 +51,9 @@ body {
     margin-bottom: 8px;
     border-radius: 15px;
     padding: 6px 20px;
+    border: none;
+    background: rgb(0, 136, 255);
+    color: white;
 }
 
 #send-form {
@@ -79,7 +86,7 @@ body {
       }
       
       .gi1 { grid-area: gi1;
-                border:solid; }
+            }
       
       .gi2 { grid-area: gi2; }
       

@@ -65,6 +65,10 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
     return true;
   };
 
+  function resizeBox() {
+      
+  }
+
   $(window).resize(function() {
-    ResizeBox();
+    resizeBox();
   });
