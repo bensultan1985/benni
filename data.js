@@ -46,7 +46,11 @@ _phraseList = {
 
     "skillset" : {
         tags: ['what', 'skills', 'have', 'strongest'],
-        responses: ["I program with Javascript every day, and am an expert with DOM. Ask me about specific skills, and I can tell you if I have experience with them."]
+        responses: ["I program with Javascript every day. I also use other full-stack languages and frameworks like Node.js, Express.js, React, SQL, and NoSQL. Ask me about specific skills, and I can tell you if I have experience with them."]
+    },
+    "planning" : {
+        tags: ['how', 'what', 'approach', 'design', 'project', 'team', 'sketch', 'figma', 'wireframe', 'organize'],
+        responses: ["I think you are asking about project planning and design. I approach projects with attention to the big picture and to details. That is why before I begin, I may create spreadsheets, draw wireframes, and discuss best practices with my teammates. I would keep track of my project by updating a design document."]
     },
 
     "resume" : {

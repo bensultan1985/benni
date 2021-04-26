@@ -165,7 +165,7 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
         sentence != ''? sentence = 'Yes, I have experience with ' + sentence : sentence = "I don't think I've studied that skill much yet, but I am a quick study."
       }
     } else {
-      if (targetPhrase.count == 1 && (arr[0] == 'greeting' || arr[0] == 'contact' || arr[0] == 'schedule' || arr[0] == 'education' || arr[0] == 'salary' || arr[0] == 'relocate' || arr[0] == 'located' || arr[0] == 'start' || arr[0] == 'salary' || arr[0] == 'remote' || arr[0] == 'projects' || arr[0] == 'resume' || arr[0] == 'goals' || arr[0] == 'presenting')) {
+      if (targetPhrase.count == 1 && (arr[0] == 'greeting' || arr[0] == 'contact' || arr[0] == 'schedule' || arr[0] == 'education' || arr[0] == 'salary' || arr[0] == 'relocate' || arr[0] == 'located' || arr[0] == 'start' || arr[0] == 'salary' || arr[0] == 'remote' || arr[0] == 'projects' || arr[0] == 'resume' || arr[0] == 'goals' || arr[0] == 'presenting' || arr[0] == 'planning')) {
         sentence = _phraseList[arr[0]].responses[0];
       } else {
         sentence = _notSureLevel[Math.floor(Math.random() * 3)];
@@ -177,7 +177,7 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
 
   function getTextMsg(sentence, type) {
     count = 0;
-    var msg = '...'
+    var msg = '<h4>...</h4>'
     if (type != 'response') msg = sentence;
     type == 'response'? count = _respCount : count = _postCount;
     var container = genElement('div', 'text-' + type + count, 'text-container-' + type, msg)
@@ -188,11 +188,11 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
       setTimeout(function(){
         textOut.appendChild(container);
         scrollDown();
-      }, 500)
+      }, 800)
       setTimeout(function(){
         container.innerHTML = sentence;
         scrollDown();
-      }, 2000)
+      }, 2500)
     } else {
       textOut.appendChild(container);
     }
