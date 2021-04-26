@@ -1,6 +1,9 @@
 body {
     background-color: aliceblue;
+    background-color: rgb(221, 235, 247);
+
     color: black;
+    height: 100vh;
 }
 
 .intro-box {
@@ -30,6 +33,7 @@ body {
     background: white;
     margin: 10px;
     border-radius: 15px;
+    overflow-y: auto;
 }
 
 #q-input {
@@ -74,6 +78,7 @@ body {
 
 @media screen and (min-width: 824px) {
     .grid-container {
+        height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -90,7 +95,9 @@ body {
       
       .gi2 { grid-area: gi2; }
       
-      .gi3 { grid-area: gi3; }
+      .gi3 {
+          grid-area: gi3;
+        }
       
       .gi4 { grid-area: gi4; }
       
@@ -99,6 +106,7 @@ body {
 
 @media screen and (max-width: 823px) {
     .grid-container {
+        height: 100vh;
         display: grid;
         grid-template-columns: 1fr;
         /* grid-template-rows: 1fr 1fr 1fr; */
@@ -114,7 +122,11 @@ body {
     
     .gi2 { grid-area: gi2; }
     
-    .gi3 { grid-area: gi3; }
+    .gi3 {
+        grid-area: gi3;
+        overflow: auto;
+
+    }
     
     .gi4 { grid-area: gi4; }
 
@@ -122,4 +134,22 @@ body {
         margin-top: 10px;
     }
   
+}
+
+.text-container-post {
+    margin-bottom: 40px;
+    background: rgb(222, 222, 222);
+    margin-right: 0px;
+    margin-right: 55%;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.text-container-response {
+    background: rgb(0, 136, 255);
+    margin-left: 0px;
+    margin-left: 55%;
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
 }
