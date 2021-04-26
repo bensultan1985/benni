@@ -7,6 +7,7 @@ var _notSureElevated = ["Sorry, but I still don't understand. Ask me a new quest
 var _notSureLevel = _notSure;
 var _postCount = 0;
 var _respCount = 0;
+console.log(`Benni: HEY!! HEY YOU! This is my private area. Can't a bot get some privacy in his own log?`)
 
 function onLoad(){
     var introP = genElement('p', 'intro-text', '', introMsg)
@@ -20,6 +21,7 @@ function initBenniSys() {
     var textOut = createAnsDiv();
     appendChildren(mainContainer, [textOut, sendForm])
     resizeBox();
+    getTextMsg('<h2>👋 😎</h2>','response')
 }
 
 function createSendForm() {
@@ -28,7 +30,6 @@ function createSendForm() {
     var qSend = createQSend();
     appendChildren(form, [qInput, qSend])
     qSend.addEventListener('click', (event) => {
-      console.log(event)
       event.preventDefault();
       _currentQuery = qInput.value;
       getQueryArray(_currentQuery);
@@ -107,10 +108,8 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
       if (word[word.length-1] == '.' || word[word.length-1] == '?' || word[word.length-1] == '!') {
         str = word.slice(0, word.length - 1);
         array[i] = str;
-        console.log(str)
       }
     }
-    console.log(array)
     buildIntel(array)
   }
 
@@ -118,7 +117,6 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
     _intel = {};
     var expArr = [];
     array.forEach(word => {
-      console.log(word)
       for (phrase in _phraseList) {
         if (!_intel[phrase]) {
           _intel[phrase] = {
@@ -143,7 +141,6 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
     })
     // console.log(_intel)
     var sorted = Object.keys(_intel).sort(function(a, b){
-      console.log(_intel[a].count,_intel[b].count)
         return _intel[b].count - _intel[a].count;
     })
     buildResponse(sorted, expArr);
@@ -165,7 +162,7 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
           if (i == 0) sentence += ' ' + expArr[i] + ' ';
           if (i > 0 && i == expArr.length-1) sentence += 'and ' + expArr[i] + '.'
         }
-        sentence != ''? sentence = 'Yes, I know ' + sentence : sentence = "I don't think I've studied that skill much yet, but I am a quick study."
+        sentence != ''? sentence = 'Yes, I have experience with ' + sentence : sentence = "I don't think I've studied that skill much yet, but I am a quick study."
       }
     } else {
       if (targetPhrase.count == 1 && (arr[0] == 'greeting' || arr[0] == 'contact' || arr[0] == 'schedule' || arr[0] == 'education' || arr[0] == 'salary' || arr[0] == 'relocate' || arr[0] == 'located' || arr[0] == 'start' || arr[0] == 'salary' || arr[0] == 'remote' || arr[0] == 'projects' || arr[0] == 'resume' || arr[0] == 'goals' || arr[0] == 'presenting')) {

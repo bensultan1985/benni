@@ -44,6 +44,11 @@ _phraseList = {
         responses: ["I think my preference is to work remotely."]
     },
 
+    "skillset" : {
+        tags: ['what', 'skills', 'have', 'strongest'],
+        responses: ["I program with Javascript every day, and am an expert with DOM. Ask me about specific skills, and I can tell you if I have experience with them."]
+    },
+
     "resume" : {
         tags: ['resume', 'have', 'do'],
         responses: ["Yes, I have a resume. You can find it on my website: https://www.bensultan.com"]
@@ -55,13 +60,13 @@ _phraseList = {
     },
 
     "hobbies" : {
-        tags: ['what', 'have', 'hobbies', 'free', 'time', 'interests', 'activities', 'talents', 'talent', 'special', 'other', 'personal', 'fun'],
+        tags: ['what', 'have', 'hobbies', 'free', 'time', 'interests', 'activities', 'talents', 'talent', 'special', 'do', 'other', 'personal', 'fun'],
         responses: ["I enjoy writing and recording music, and I am a card-carrying member of the International Jugglers' Association"]
     },
 
     "strengths" : {
         tags: ['what', 'strengths', 'strength', 'talent', 'skill', 'confident', 'abilities'],
-        responses: ["I enjoy problem solving, i am a clear communicator, and I am a javscript expert."]
+        responses: ["I enjoy problem solving, i am a clear communicator, and I am a Javascript expert."]
     },
 
     "weaknesses" : {
@@ -88,7 +93,7 @@ _phraseList = {
         responses: ["I have been developing personal projects for two years. I have 8 months' professional experience as a software engineer."]
     },
     "greeting" : {
-        tags: ['hello', 'hey', 'hi'],
+        tags: ['hello', 'hey', 'hi', 'greetings', 'hola', 'howdy'],
         responses: ["Hi, nice to meet you. I love being interviewed. Ask away!", "Hello yourself! I'm excited that you'll be interviewing me.", "Hey! I had my coffee and eggs this morning. I'm ready for this interview."]
     },
     "too" : {
