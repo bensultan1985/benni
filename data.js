@@ -10,12 +10,12 @@ _phraseList = {
     },
 
     "experience" : {
-        tags: ['experience', 'experienced', 'do', 'know', 'have', 'skills', 'skill', 'use',"sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic"],
+        tags: ['experience', 'experienced', 'how', 'do', 'know', 'have', 'skills', 'skill', 'use',"sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic"],
         responses: ["sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic"]
     },
 
     "salary" : {
-        tags: ['salary', 'annual', 'benefits', 'retirement', 'expected', 'range'],
+        tags: ['salary', 'annual', 'benefits', 'retirement', 'expected', 'range', 'what', 'requirements'],
         responses: ["It depends on the benefits and location, but the lower end of my salary expectation is 75k. This is all negotiable."]
     },
 
@@ -25,18 +25,33 @@ _phraseList = {
     },
 
     "relocate" : {
-        tags: ['relocate', 'relocation', 'expense', 'travel'],
+        tags: ['relocate', 'relocation', 'expense', 'travel', 'willing', 'can', 'would'],
         responses: ["Yes, I am ready and willing to relocate for the right position. And, I am ready for business travel."]
     },
 
     "located" : {
-        tags: ['where', 'city', 'state', 'located', 'from', 'live', 'currently'],
+        tags: ['where', 'city', 'state', 'located', 'from', 'live', 'currently', 'do'],
         responses: ['I am currently located in Culver City, California (in Los Angeles County).']
     },
 
     "start" : {
-        tags: ['start', 'job', 'date', 'contract', 'begin', 'work', 'soon', 'ready'],
+        tags: ['start', 'job', 'date', 'contract', 'begin', 'work', 'soon', 'ready', 'when'],
         responses: ["I can start tomorrow."]
+    },
+
+    "remote" : {
+        tags: ['remote', 'would', 'remotely', 'work'],
+        responses: ["I think my preference is to work remotely."]
+    },
+
+    "resume" : {
+        tags: ['resume', 'have', 'do'],
+        responses: ["Yes, I have a resume. You can find it on my website: https://www.bensultan.com"]
+    },
+
+    "projects" : {
+        tags: ['projects', 'personal', 'coding', 'professional'],
+        responses: ["Yes, I have many coding projects that you can view at https://www.bensultan.com"]
     },
 
     "hobbies" : {
@@ -69,7 +84,7 @@ _phraseList = {
     },
 
     "years" : {
-        tags: ['years', 'experience', 'professional', 'do', 'programming', 'job', 'work', 'working', 'many'],
+        tags: ['how', 'years', 'experience', 'professional', 'do', 'programming', 'job', 'work', 'working', 'many'],
         responses: ["I have been developing personal projects for two years. I have 8 months' professional experience as a software engineer."]
     },
     "greeting" : {
@@ -82,7 +97,7 @@ _phraseList = {
     },
     "contact" : {
         tags: ["contact, info, email, phone, call"],
-        responses: ["It sounds like I really nailed this virtual interview. The real Ben's email is bensultan1985@gmail.com. Ben is going to be excited to hear from you! And I might get a bonus for my good work. Right now, I live on a Heroku server, but I'm saving up for my very own domain.", "The real Ben's email address is bensultan1985@gmail.com. He is going to be so happy to hear from you."]
+        responses: ["It sounds like I really nailed this virtual interview. The real Ben's email is bensultan1985@gmail.com. Ben is going to be excited to hear from you! And I might get a bonus for my good work. Right now, I live as a sub-domain on bensultan.com, but I'm saving up for my very own domain.", "The real Ben's email address is bensultan1985@gmail.com. He is going to be so happy to hear from you."]
     },
     "schedule" : {
         tags: ["appointment", "schedule", "interview", "real"],
@@ -97,11 +112,31 @@ _phraseList = {
         responses: ["I design and plan from the top down before beginning to code, which helps me avoid major issues later. However, bugs and challenges arise often in programming. I enjoy solving problems."]
     },
     "company" : {
-        tags: ["what", "kind", "type", "company", "dev", "team", "development", "products", "software", "like", "want"],
+        tags: ["what", "kind", "type", "company", "dev", "team", "development", "products", "software", "like", "want", "environment"],
         responses: ["I think you are asking what type of company I would like to work for. The answer is, I would like to ideally work for a tech company that makes intuitive, leading-edge tech products (like Apple and Amazon). If your company is not primarily a tech company, that's okay too - other sectors that greatly interest me are fitness, education, and entertainment!"]
     },
     "position" : {
         tags : ["developer", "programmer", "job", "position", "role", "level", "what", "looking", "want", "engineer", "seeking"],
         responses: ["I am seeking a position as a Software Engineer."]
+    },
+    "languages" : {
+        tags : ['languages', 'language', 'favorite', 'programming', 'how', 'many', 'do', 'know', 'can', 'which', 'what'],
+        responses: ['My strongest language is Javascript. I also use HTML5/CSS3, Node.js, Express.js, React.js, C++, SQL, and some others.']
+    },
+    "memory-problem" : {
+        tags : ['descibe', 'time', 'when', 'problem', 'issue', 'difficult', 'deadline'],
+        responses: ['I think you asked me to describe a time when I was faced with a problem. I remember a time when my team needed to move on to other projects, but we felt that we needed more time to strengthen the software we had been building. We solved this by releasing an initial version that was not "pretty", but functioned properly. This allowed us to publish the project on time, but improve it later.']
+    },
+    "goals" : {
+        tags : ['goals', 'goal', 'your', 'career', 'ideal'],
+        responses: ['I want to develop intuitive, helpful software.']
+    },
+    "memory-traits" : {
+        tags : ['describe', 'tell', 'traits', 'trait', 'qualities', 'personality', 'three', 'leadership'],
+        responses: ['I would describe myself as thoughtful, logic, and creative.']
+    },
+    "presenting" : {
+        tags : ['present', 'audience', 'group', 'teach', 'presentation', 'meetings', 'clearly', 'represent', 'comfortable'],
+        responses: ['I think you asked if I am comfortable with public speaking. Yes, I am enjoy giving presentations and sharing ideas.']
     }
 }
