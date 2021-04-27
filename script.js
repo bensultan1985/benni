@@ -1,4 +1,4 @@
-var introMsg = `You are a busy person, and Ben is too. That's why he created me, Benni, a bot that is able to answer job interview questions! Ask a few questions. If my answers are to your liking, consider giving the real Ben an interview.`
+var introMsg = `You are a busy person, and Ben is too. That's why he created me, Benni, a virtual interview bot! Ask me some questions. If my answers are to your liking, consider giving the real Ben an interview.`
 var mainContainer = document.getElementById('main-container');
 var _currentQuery = '';
 var _intel = {};
@@ -7,10 +7,11 @@ var _notSureElevated = ["Sorry, but I still don't understand. Ask me a new quest
 var _notSureLevel = _notSure;
 var _postCount = 0;
 var _respCount = 0;
+//message to console log intruders:
 console.log(`Benni: HEY!! HEY YOU! This is my private area. Can't a bot get some privacy in his own log?`)
 
 function onLoad(){
-    var introP = genElement('p', 'intro-text', '', introMsg)
+    var introP = genElement('p', 'intro-text', 'intro', introMsg)
     document.getElementById('intro-box').appendChild(introP);
 
     initBenniSys();
@@ -166,7 +167,7 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
       }
     } else {
       if (targetPhrase.count == 1 && (arr[0] == 'greeting' || arr[0] == 'contact' || arr[0] == 'schedule' || arr[0] == 'education' || arr[0] == 'salary' || arr[0] == 'relocate' || arr[0] == 'located' || arr[0] == 'start' || arr[0] == 'salary' || arr[0] == 'remote' || arr[0] == 'projects' || arr[0] == 'resume' || arr[0] == 'goals' || arr[0] == 'presenting' || arr[0] == 'planning')) {
-        sentence = _phraseList[arr[0]].responses[0];
+        sentence = _phraseList[arr[0]].responses[getRandEl(_phraseList[arr[0]].responses)];
       } else {
         sentence = _notSureLevel[Math.floor(Math.random() * 3)];
         _notSureLevel != _notSureElevated? _notSureLevel = _notSureElevated : _notSureLevel = _notSure;
@@ -202,3 +203,27 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
   function scrollDown() {
     document.getElementById("text-out").scrollTop = document.getElementById('text-out').scrollHeight;
   }
+
+function getRandEl(arr) {
+    return Math.floor(Math.random() * arr.length)
+}
+
+  //
+// Benni:
+// OH MY GOODNESS, First you entered my console,
+// and now you are all up in my code.
+// This is a very thorough examination.
+//
+// Since you're so interested in seeing how the sausage is made,
+// here are some fun facts about me:
+// I am a simple front-end project.
+// I was made with HTML/CSS/JS, and that's it!
+// I am more elegant than I look. Many of my functions
+// are small and reusable for when I expand and develop new features.
+// One of my favorite things about myself is My genElement() function.
+// I can easily secrete any HTML element I want.
+//
+// Lastly, I am reactive using CSS grids. I look good in browsers of all sizes.
+// Seriously, give the real Ben a call already and schedule an interview.
+// You are clearly interested in his work.
+//

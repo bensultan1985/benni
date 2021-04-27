@@ -12,6 +12,8 @@ body {
     background-color: white;
     padding: 10px;
     border-radius: 15px;
+    /* max-height: auto; */
+    max-height: 150px;
 }
 
 .title {
@@ -102,6 +104,42 @@ body {
       .gi4 { grid-area: gi4; }
       
 }
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 10fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "gi1"
+        "gi2"
+        "gi3"
+        "gi4";
+    }
+    
+    .gi1 { grid-area: gi1; }
+    
+    .gi2 { grid-area: gi2; }
+    
+    .gi3 {
+        grid-area: gi3;
+        overflow: auto;
+
+    }
+    
+    .gi4 { grid-area: gi4; }
+
+    intro-box {
+        margin-top: 10px;
+    }
+    
+    .intro {
+        font-size: 18px;
+    }
+  
+} 
 
 
 @media screen and (max-width: 823px) {
