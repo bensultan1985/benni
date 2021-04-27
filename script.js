@@ -1,4 +1,8 @@
-var introMsg = `You are a busy person, and Ben is too. That's why he created me, Benni, a virtual interview bot! Ask me some questions. If my answers are to your liking, consider giving the real Ben an interview.`
+var introMsg = `You are a busy person, and Ben is too. That's why he created me, Benni, the interview bot! Ask me some questions. If you like my answers, consider giving the real Ben an interview.`
+var introMsgMobile = `I'm Benni, the interview bot! Ask me some questions. If you like my answers, consider giving the real Ben an interview.`
+var introMsgMin = `Before you interview the real Ben, interview me.`
+
+
 var mainContainer = document.getElementById('main-container');
 var _currentQuery = '';
 var _intel = {};
@@ -15,6 +19,7 @@ function onLoad(){
     document.getElementById('intro-box').appendChild(introP);
 
     initBenniSys();
+    resizeBox();
 }
 
 function initBenniSys() {
@@ -93,6 +98,15 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
      if (document.getElementById('text-out')) {
      $('#text-out').height(mainHeight-100)
      }
+     if ($('body').width() < 700) {
+      if ($('body').height() < 400) {
+        document.getElementById('intro-text').innerHTML = introMsgMin;
+      } else {
+      document.getElementById('intro-text').innerHTML = introMsgMobile;
+      }
+    } else {
+      document.getElementById('intro-text').innerHTML = introMsg;
+    }
   }
 
   $(window).resize(function() {
