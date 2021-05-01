@@ -1,7 +1,7 @@
 _phraseList = {
     "seeking" : {
         tags: ['why', 'seeking', 'job', 'want', 'here', 'company'],
-        responses: ["I want to join an exciting dev team.", "I want a job either in California or remote.", "I want to find the right opportunit for me."]
+        responses: ["I want to join an exciting dev team.", "I want to find the right opportunit for me."]
     },
 
     "pleasantries" : {
@@ -15,7 +15,7 @@ _phraseList = {
     },
 
     "salary" : {
-        tags: ['salary', 'annual', 'benefits', 'retirement', 'expected', 'range', 'what', 'requirements'],
+        tags: ['salary', 'annual', 'benefits', 'retirement', 'expected', 'range', 'what', 'requirements', 'expectation'],
         responses: ["It depends on the benefits and location, but the lower end of my salary expectation is 75k. This is all negotiable."]
     },
 
@@ -30,7 +30,7 @@ _phraseList = {
     },
 
     "located" : {
-        tags: ['where', 'city', 'state', 'located', 'from', 'live', 'currently', 'do'],
+        tags: ['where', 'city', 'state', 'located', 'from', 'live', 'currently', 'you', 'reside'],
         responses: ['I am currently located in Culver City, California (in Los Angeles County).']
     },
 
@@ -147,5 +147,29 @@ _phraseList = {
     "presenting" : {
         tags : ['present', 'audience', 'group', 'teach', 'presentation', 'meetings', 'clearly', 'represent', 'comfortable'],
         responses: ['I think you asked if I am comfortable with public speaking. Yes, I am enjoy giving presentations and sharing ideas.']
+    },
+    "whyhire" : {
+        tags: ['why', 'hire', 'should'],
+        responses : ['I have a track record of delivering quality software on time, I am an effective communicator, and I am a great problem solver.']
+    },
+    "http" : {
+        tags: ['describe', 'http', 'request', 'can', 'detail', 'details', 'explain', 'happens'],
+        responses: ['Ask the real Ben for all the details, but an HTTP request works as follows: When a user enters a web address, a call is made to the DNS server. The DNS server then connects the client to the requested server. Then, the client sends the HTTP request to the server. Finally, the server sends back a response.']
+    },
+    "meaning" : {
+        tags: ['meaning', 'life'],
+        responses: [`This is not the droid you're looking for.`]
+    },
+    "question" : {
+        tags: ['what', 'where', 'when', 'why', 'how', 'do'],
+        responses: [`This is not the droid you're looking for.`]
+    },
+    "laugh" : {
+        tags: ['lol', 'rofl', 'lmao', 'haha'],
+        responses: [`lol 🤣`]
+    },
+    "bye" : {
+        tags: ['bye', 'ttyl', 'adios'],
+        responses: [`Bye - and thanks for the interview!`, 'It was nice to meet you. Take care!']
     }
 }

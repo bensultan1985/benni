@@ -79,7 +79,7 @@ body {
     max-width: 700px;
 }
 
-@media screen and (min-width: 824px) {
+@media screen and (min-width: 1000px) {
     .grid-container {
         height: 100vh;
         display: grid;
@@ -163,7 +163,7 @@ body {
 } 
 
 
-@media screen and (max-width: 823px) {
+@media screen and (max-width: 1000px) {
     .grid-container {
         height: 90vh;
         display: grid;

@@ -6,8 +6,11 @@ var introMsgMin = `Before you interview the real Ben, interview me.`
 var mainContainer = document.getElementById('main-container');
 var _currentQuery = '';
 var _intel = {};
-var _notSure = ["I'm a mere bot, and I did not understand the question. Can you ask it another way?", "If you ask that another way, perhaps I can understand it.", "I'm a little confused about the question. Try to ask one more time in a slightly different way, please."];
-var _notSureElevated = ["Sorry, but I still don't understand. Ask me a new question.", "I'm still confused. This would be a great question to ask Ben directly.", "Ah, the life of a bot. I have failed my only task. I still don't understand your question. Ask me something else."];
+var _notSureQ = ["I'm a mere bot, and I did not understand the question. Can you ask it another way?", "If you ask that another way, perhaps I can understand it.", "I'm a little confused about the question. Try to ask one more time in a slightly different way, please."];
+var _notSureQElevated = ["Sorry, but I still don't understand. Ask me a new question.", "I'm still confused. This would be a great question to ask Ben directly.", "Ah, the life of a bot. I have failed my only task. I still don't understand your question. Ask me something else."];
+var _notSureQLevel = _notSure;
+var _notSure = ["hmm.. I did not understand that. Try saying it a different way.", "Didn't quite understand that. Say it a little different for me.", "Can you say that a different way? I don't totally understand."];
+var _notSureElevated = ["I still don't understand. Try asking me another interview question."];
 var _notSureLevel = _notSure;
 var _postCount = 0;
 var _respCount = 0;
@@ -180,10 +183,15 @@ function genElement(type, id, className, innerHTML, value, nameAttr, otherAttr) 
         sentence != ''? sentence = 'Yes, I have experience with ' + sentence : sentence = "I don't think I've studied that skill much yet, but I am a quick study."
       }
     } else {
-      if (targetPhrase.count == 1 && (arr[0] == 'greeting' || arr[0] == 'contact' || arr[0] == 'schedule' || arr[0] == 'education' || arr[0] == 'salary' || arr[0] == 'relocate' || arr[0] == 'located' || arr[0] == 'start' || arr[0] == 'salary' || arr[0] == 'remote' || arr[0] == 'projects' || arr[0] == 'resume' || arr[0] == 'goals' || arr[0] == 'presenting' || arr[0] == 'planning')) {
-        sentence = _phraseList[arr[0]].responses[getRandEl(_phraseList[arr[0]].responses)];
+      if (targetPhrase.count == 1 && (arr[0] == 'greeting' || arr[0] == 'contact' || arr[0] == 'schedule' || arr[0] == 'education' || arr[0] == 'relocate' || arr[0] == 'located' || arr[0] == 'start' || arr[0] == 'remote' || arr[0] == 'projects' || arr[0] == 'resume' || arr[0] == 'goals' || arr[0] == 'presenting' || arr[0] == 'planning' || arr[0] == 'whyhire' || arr[0] == 'questions' || arr[0] == 'laugh')) {
+        if (arr[0] != 'questions') {
+          sentence = _phraseList[arr[0]].responses[getRandEl(_phraseList[arr[0]].responses)];
+        } else {
+          sentence = _notSureQLevel[Math.floor(Math.random() * _notSureQLevel.length)];
+          _notSureQLevel != _notSureQElevated? _notSureQLevel = _notSureQElevated : _notSureQLevel = _notSureQ;
+        }
       } else {
-        sentence = _notSureLevel[Math.floor(Math.random() * 3)];
+        sentence = _notSureLevel[Math.floor(Math.random() * _notSureLevel.length)];
         _notSureLevel != _notSureElevated? _notSureLevel = _notSureElevated : _notSureLevel = _notSure;
       }
     }
