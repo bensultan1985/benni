@@ -1,6 +1,6 @@
 _phraseList = {
     "seeking" : {
-        tags: ['why', 'seeking', 'job', 'want', 'here', 'position', 'type', 'kind'],
+        tags: ['why', 'seeking', 'job', 'want', 'here', 'position', 'type', 'kind', 'role'],
         responses: ["I want to join an exciting dev team as a mid-level software engineer.", "I am seeking a position as a mid-level software engineer."]
     },
 
@@ -109,7 +109,7 @@ _phraseList = {
         responses: ["It sounds like I really nailed this virtual interview. The real Ben's email is bensultan1985@gmail.com. Ben is going to be excited to hear from you! And I might get a bonus for my good work. Right now, I live as a sub-domain on bensultan.com, but I'm saving up for my very own domain.", "The real Ben's email address is bensultan1985@gmail.com. He will be happy to hear from you."]
     },
     "schedule" : {
-        tags: ["appointment", "schedule", "interview", "real"],
+        tags: ["appointment", "schedule", "interview", "real", "would"],
         responses: ["Right now, I am a limited bot that can't schedule interviews, so you will have to email Ben directly at bensultan1985@gmail.com"]
     },
     "interpersonal" : {
