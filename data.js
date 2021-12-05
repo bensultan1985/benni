@@ -1,7 +1,7 @@
 _phraseList = {
     "seeking" : {
-        tags: ['why', 'seeking', 'job', 'want', 'here', 'company'],
-        responses: ["I want to join an exciting dev team.", "I want to find the right job opportunity."]
+        tags: ['why', 'seeking', 'job', 'want', 'here', 'position', 'type', 'kind'],
+        responses: ["I want to join an exciting dev team as a mid-level software engineer.", "I am seeking a position as a mid-level software engineer."]
     },
 
     "pleasantries" : {
