@@ -2,7 +2,7 @@ var introMsg = `You are a busy person, and Ben is too. That's why he created me,
 var introMsgMobile = `I'm Benni, the interview bot! Ask me some questions. If you like my answers, consider giving the real Ben an interview.`
 var introMsgMin = `Before you interview the real Ben, interview me.`
 
-
+//test comment
 var mainContainer = document.getElementById('main-container');
 var _currentQuery = '';
 var _intel = {};
