@@ -10,7 +10,7 @@ _phraseList = {
     },
 
     "experience" : {
-        tags: ['experience', 'experienced', 'how', 'do', 'know', 'have', 'skills', 'skill', 'use',"sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic", "typescript", "gatsby", "docker", "sass", "react native", "responsive design", "design", "wireframing", "libraries", "aws", "gcp"],
+        tags: ['experience', 'experienced', 'how', 'do', 'know', 'have', 'skills', 'skill', 'use',"sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic", "typescript", "gatsby", "docker", "sass", "react native", "responsive design", "design", "wireframing", "libraries", "aws", "gcp", "react-query", "reactquery", "tailwind", "jira", "confluence", "figma"],
         responses: ["sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic", "typescript", "gatsby", "docker", "sass", "react native", "responsive design", "design", "wireframing", "libraries", "aws", "gcp", "react-query", "reactquery", "tailwind", "jira", "confluence", "figma"]
     },
 
