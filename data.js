@@ -11,7 +11,7 @@ _phraseList = {
 
     "experience" : {
         tags: ['experience', 'experienced', 'how', 'do', 'know', 'have', 'skills', 'skill', 'use',"sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic", "typescript", "gatsby", "docker", "sass", "react native", "responsive design", "design", "wireframing", "libraries", "aws", "gcp"],
-        responses: ["sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic", "typescript", "gatsby", "docker", "sass", "react native", "responsive design", "design", "wireframing", "libraries", "aws", "gcp"]
+        responses: ["sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic", "typescript", "gatsby", "docker", "sass", "react native", "responsive design", "design", "wireframing", "libraries", "aws", "gcp", "react-query", "reactquery", "tailwind", "jira", "confluence", "figma"]
     },
 
     "salary" : {
@@ -41,12 +41,12 @@ _phraseList = {
 
     "remote" : {
         tags: ['remote', 'would', 'remotely', 'work'],
-        responses: ["I think my preference is to work remotely."]
+        responses: ["I think my preference is to work remotely or hybrid."]
     },
 
     "skillset" : {
         tags: ['what', 'skills', 'have', 'strongest'],
-        responses: ["I program with Javascript every day. I also use other full-stack languages and frameworks like Node.js, Express.js, React, React Native, SQL, and NoSQL. Ask me about specific skills, and I can tell you if I have experience with them."]
+        responses: ["I program with Javascript and React every day. I also use other full-stack languages and frameworks like Node.js, Express.js, React Native, SQL, and NoSQL. Ask me about specific skills, and I can tell you if I have experience with them."]
     },
     "planning" : {
         tags: ['how', 'what', 'approach', 'design', 'project', 'team', 'sketch', 'figma', 'wireframe', 'organize'],
