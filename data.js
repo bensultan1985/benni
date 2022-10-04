@@ -10,13 +10,13 @@ _phraseList = {
     },
 
     "experience" : {
-        tags: ['experience', 'experienced', 'how', 'do', 'know', 'have', 'skills', 'skill', 'use',"sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic", "typescript", "gatsby", "docker", "sass", "react native", "responsive design", "design", "wireframing", "libraries", "aws", "gcp", "react-query", "reactquery", "tailwind", "jira", "confluence", "figma"],
-        responses: ["sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic", "typescript", "gatsby", "docker", "sass", "react native", "responsive design", "design", "wireframing", "libraries", "aws", "gcp", "react-query", "reactquery", "tailwind", "jira", "confluence", "figma"]
+        tags: ['experience', 'experienced', 'how', 'do', 'know', 'have', 'skills', 'skill', 'use',"sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic", "typescript", "gatsby", "docker", "sass", "react native", "responsive design", "design", "wireframing", "libraries", "aws", "gcp", "react-query", "reactquery", "tailwind", "jira", "confluence", "figma", "next", "next.js"],
+        responses: ["sql", "nosql", "react", "react.js", "javascript", "js", "node", "node.js", "express.js", "express", "aws", "mysql", "mongodb", "jquery", "testing", "jest", "data", "structures", "algorithms", "bootstrap", "apis", "api", "restfulapis", "git", "github", "html", "html5", "css", "css3", "web development", "mern", "logic", "typescript", "gatsby", "docker", "sass", "react native", "responsive design", "design", "wireframing", "libraries", "aws", "gcp", "react-query", "reactquery", "tailwind", "jira", "confluence", "figma", "next", "next.js"]
     },
 
     "salary" : {
         tags: ['salary', 'annual', 'benefits', 'retirement', 'expected', 'range', 'what', 'requirements', 'expectation'],
-        responses: ["My desired salary is 100k with health and retirement benefits."]
+        responses: ["My desired salary range is 105-120k, depending on various factors including the details of the benefits package."]
     },
 
     "onsite" : {
@@ -26,27 +26,27 @@ _phraseList = {
 
     "relocate" : {
         tags: ['relocate', 'relocation', 'expense', 'travel', 'willing', 'can', 'would'],
-        responses: ["Yes, I am willing to relocate for the right position, and I can travel for work."]
+        responses: ["Yes, I am willing to relocate for the right position."]
     },
 
     "located" : {
         tags: ['where', 'city', 'state', 'located', 'from', 'live', 'currently', 'you', 'reside'],
-        responses: ['I am currently located in Culver City, California (in Los Angeles County).']
+        responses: ['I am currently located in sunny Culver City, California.']
     },
 
     "start" : {
         tags: ['start', 'job', 'date', 'contract', 'begin', 'work', 'soon', 'ready', 'when'],
-        responses: ["My current employer needs one month notice."]
+        responses: ["I am available to start work immediately."]
     },
 
     "remote" : {
         tags: ['remote', 'would', 'remotely', 'work'],
-        responses: ["I think my preference is to work remotely or hybrid."]
+        responses: ["At this time, my preference is to work remotely or hybrid."]
     },
 
     "skillset" : {
         tags: ['what', 'skills', 'have', 'strongest'],
-        responses: ["I program with Javascript and React every day. I also use other full-stack languages and frameworks like Node.js, Express.js, React Native, SQL, and NoSQL. Ask me about specific skills, and I can tell you if I have experience with them."]
+        responses: ["I program with Javascript and React every day. I also use other full-stack languages and frameworks like Node.js, Express.js, React Native, SQL, and NoSQL. Lately, I have been working with the framework, Next.js quite a bit. Ask me about specific skills, and I can tell you if I have experience with them."]
     },
     "planning" : {
         tags: ['how', 'what', 'approach', 'design', 'project', 'team', 'sketch', 'figma', 'wireframe', 'organize'],
